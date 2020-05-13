@@ -1,0 +1,11 @@
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: DEBUG
+    com:
+      fedex: DEBUG
+spring:
+  flyway:
+    enabled: false # Disable flyway.

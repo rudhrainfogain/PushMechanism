@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>eai3530951.com.fedex.peripherals</groupId>
+	<artifactId>rtl-peripherals</artifactId>
+	<version>${projectVersion}</version>
+	<packaging>jar</packaging>
+
+	<name>RTPeripherals</name>
+	<description>Serice to expose device as service</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.1.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<!-- Adding profiles -->
+	<profiles>
+		<profile>
+			<id>develop</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>develop</value>
+				</property>
+			</activation>
+			<properties>
+				<projectVersion>0.0.3-SNAPSHOT</projectVersion>
+			</properties>
+		</profile>
+		<profile>
+			<id>production</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>production</value>
+				</property>
+			</activation>
+			<properties>
+				<projectVersion>1.0.0-RELEASE</projectVersion>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Finchley.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+
+	</dependencyManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+
+		<jacoco.version>0.8.4</jacoco.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<!-- Setup Spring Boot -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
+
+		<!-- Added for throw awya mvc -->
+<!-- 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cloud-connectors</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-spring-service-connector</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-cloudfoundry-connector</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
+
+		<!-- Swagger Implementation -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-yaml</artifactId>
+		</dependency>
+		<!-- Device Related Jars -->
+		<!--JPOS Jars -->
+		<dependency>
+			<groupId>eai3530951.com.fedex.peripherals.jpos</groupId>
+			<artifactId>jposlibs</artifactId>
+			<version>0.0.1</version>
+			<type>pom</type>
+		</dependency>
+		<!--EPSON Receipt Printer Jars -->
+		<dependency>
+			<groupId>eai3530951.com.fedex.peripherals.epson</groupId>
+			<artifactId>epsonlibs</artifactId>
+			<version>0.0.1</version>
+			<type>pom</type>
+		</dependency>
+		<!--HoneyWell Scanner Jars -->
+		<dependency>
+			<groupId>eai3530951.com.fedex.peripherals.honeywell</groupId>
+			<artifactId>honeywell-libs</artifactId>
+			<version>0.0.1</version>
+			<type>pom</type>
+		</dependency>
+		<!-- Zebra Scanner Jars -->
+		<dependency>
+			<groupId>eai3530951.com.fedex.peripherals.zebra</groupId>
+			<artifactId>zebra-scanner-libs</artifactId>
+			<version>0.0.1</version>
+			<type>pom</type>
+		</dependency>
+		<!-- Device Related Jars -->
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eai3530951.com.fedex.peripherals</groupId>
+			<artifactId>fujitsu-receipt</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<!-- Power Mockito -->
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>2.0.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito2</artifactId>
+			<version>2.0.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>org.jacoco.agent</artifactId>
+			<version>${jacoco.version}</version>
+			<classifier>runtime</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>2.0.6</version>
+		</dependency>
+		<!-- Logger -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- Cache -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.awaitility</groupId>
+			<artifactId>awaitility</artifactId>
+			<version>3.1.6</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- <build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> <plugin> run 
+		the regular tests <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
+		<configuration> <systemPropertyVariables> <jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile> 
+		</systemPropertyVariables> <reuseForks>false</reuseForks> <forkCount>1</forkCount> 
+		</configuration> </plugin> <plugin> <groupId>org.codehaus.mojo</groupId> 
+		<artifactId>build-helper-maven-plugin</artifactId> <executions> <execution> 
+		<id>add-integration-test-source-as-test-sources</id> <phase>generate-test-sources</phase> 
+		<goals> <goal>add-test-source</goal> </goals> <configuration> <sources> <source>${project.basedir}/src/it/java</source> 
+		</sources> </configuration> </execution> <execution> <id>add-test-resource</id> 
+		<goals> <goal>add-test-resource</goal> </goals> <configuration> <resources> 
+		<resource> <directory>${project.basedir}/src/it/resources</directory> </resource> 
+		</resources> </configuration> </execution> </executions> </plugin> <plugin> 
+		run the integration tests <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-failsafe-plugin</artifactId> 
+		<executions> <execution> <goals> <goal>integration-test</goal> <goal>verify</goal> 
+		</goals> </execution> </executions> </plugin> <plugin> extract compressed 
+		dlls <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
+		<version>3.1.1</version> <executions> <execution> <id>unpack</id> <phase>package</phase> 
+		<goals> <goal>unpack</goal> </goals> <configuration> <artifactItems> <artifactItem> 
+		<groupId>eai3530951.com.fedex.peripherals.epson</groupId> <artifactId>compressed-dlls-epson</artifactId> 
+		<version>0.0.1.RELEASE</version> <type>zip</type> <overWrite>true</overWrite> 
+		<outputDirectory>${project.build.directory}/dlls</outputDirectory> </artifactItem> 
+		</artifactItems> </configuration> </execution> </executions> </plugin> <plugin> 
+		<groupId>org.jacoco</groupId> <artifactId>jacoco-maven-plugin</artifactId> 
+		<version>${jacoco.version}</version> <executions> <execution> <id>default-instrument</id> 
+		<goals> <goal>instrument</goal> </goals> </execution> <execution> <id>default-restore-instrumented-classes</id> 
+		<goals> <goal>restore-instrumented-classes</goal> </goals> </execution> <execution> 
+		<id>report</id> <phase>prepare-package</phase> <goals> <goal>report</goal> 
+		</goals> <configuration> <dataFile>${project.build.directory}/jacoco.exec</dataFile> 
+		</configuration> </execution> </executions> </plugin> <plugin> <groupId>org.sonarsource.scanner.maven</groupId> 
+		<artifactId>sonar-maven-plugin</artifactId> <version>3.6.0.1398</version> 
+		</plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-help-plugin</artifactId> 
+		<executions> <execution> <id>show-profiles</id> <phase>clean</phase> <goals> 
+		<goal>active-profiles</goal> </goals> </execution> </executions> </plugin> 
+		</plugins> </build> <repositories> <repository> <id>device-repo</id> <releases> 
+		<enabled>true</enabled> </releases> <snapshots> <enabled>false</enabled> 
+		</snapshots> <url>https://nexus.prod.cloud.fedex.com:8443/nexus/repository/release/</url> 
+		<layout>default</layout> </repository> <repository> <id>nexus.fedex.com</id> 
+		<releases> <enabled>true</enabled> </releases> <snapshots> <enabled>false</enabled> 
+		</snapshots> <url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/central/</url> 
+		<layout>default</layout> </repository> <repository> <id>fxo-nexus-snapshots</id> 
+		<releases> <enabled>false</enabled> </releases> <snapshots> <enabled>true</enabled> 
+		</snapshots> <url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/FXO-Common-snapshot</url> 
+		<layout>default</layout> </repository> <repository> <id>fxo-nexus</id> <releases> 
+		<enabled>true</enabled> </releases> <snapshots> <enabled>false</enabled> 
+		</snapshots> <url>https://nexus.prod.cloud.fedex.com:8443/nexus/content/repositories/FXO-Common</url> 
+		<layout>default</layout> </repository> <repository> <id>spring-snapshots</id> 
+		<name>Spring Snapshots</name> <url>https://repo.spring.io/snapshot</url> 
+		<snapshots> <enabled>true</enabled> </snapshots> </repository> <repository> 
+		<id>spring-milestones</id> <name>Spring Milestones</name> <url>https://repo.spring.io/milestone</url> 
+		<snapshots> <enabled>false</enabled> </snapshots> </repository> <repository> 
+		<id>spring-release</id> <url>https://repo.spring.io/libs-release</url> </repository> 
+		<repository> <id>sonatype-snapshots</id> <url>https://oss.sonatype.org/content/repositories/snapshots</url> 
+		</repository> </repositories> <pluginRepositories> <pluginRepository> <id>codehaus</id> 
+		<url>https://repo.maven.apache.org/maven2/</url> <snapshots> <enabled>true</enabled> 
+		<updatePolicy>always</updatePolicy> </snapshots> <releases> <enabled>false</enabled> 
+		</releases> </pluginRepository> </pluginRepositories> Distribution Management 
+		<distributionManagement> <repository> <id>jenkins</id> <name>Release Repo</name> 
+		<url>https://nexus.prod.cloud.fedex.com:8443/nexus/repository/release/</url> 
+		</repository> <snapshotRepository> <id>jenkins1</id> <name>Snapshot Repo</name> 
+		<url>https://nexus.prod.cloud.fedex.com:8443/nexus/repository/snapshot/</url> 
+		</snapshotRepository> </distributionManagement> -->
+</project>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SignedFormattedData>
+   <FormattedData Version="2.0">
+      <ReceiptImage Width="42">
+         <Layout LogicalName="AllowDR">
+            <Image FileName="https://www.fedex.com/content/dam/fedex-com/logos/logo.png" Alignment="Center" />
+            <ReceiptLine Alignment="Center">
+               <Field Text="Market Place" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Fujitsu America Inc" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Durham-MainSt-NC" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="100 Main Street" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Durham" />
+               <Field Text=", " />
+               <Field Text="NC" />
+               <Field Text="  " />
+               <Field Text="27707" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Right">
+               <Field Text="(" />
+               <Field Text="555" />
+               <Field Text=")" />
+               <Field Text=" " />
+               <Field Text="5550002" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="__________________________________________" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center" ConditionalPrintType="1">
+               <Field Text="***** Duplicate *****">
+                  <PrintControl DoubleWide="1" DoubleHigh="1" />
+               </Field>
+            </ReceiptLine>
+			<ReceiptLine Alignment="Center" ConditionalPrintType="1">
+               <Field Text="***** Duplicate *****">
+                  <PrintControl DoubleHigh="1" />
+               </Field>
+            </ReceiptLine>
+			<ReceiptLine Alignment="Center" ConditionalPrintType="1">
+               <Field Text="***** Duplicate *****">
+                  <PrintControl DoubleWide="1" />
+               </Field>
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="0010017                    " />
+               <Field Text="     $42.99" />
+               <Field Text="    " />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text=" " />
+               <Field Text="      Career Jacket       " />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="0010017                    " />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="     " />
+               <Field Text="NO RETURN AFTER" />
+               <Field Text="  6/10/2019" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="                            __________" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="SubTotal                  " />
+               <Field Text="      $42.99" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="NC-State Tax              " />
+               <Field Text="       $2.06" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="NC-State Tax              " />
+               <Field Text="       $0.99" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="TOTAL                     " />
+               <Field Text="      $46.04" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="VISA                       " />
+               <Field Text="     $46.04" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text=" " />
+               <Field Text="Card number:" />
+               <Field Text="  " />
+               <Field Text=" *************XXXX  " />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text=" " />
+               <Field Text="Authorization" />
+               <Field Text="  " />
+               <Field Text="abcdefg" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="Total Items Sold:" />
+               <Field Text=" " />
+               <Field Text="1" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="TOTAL                       " />
+               <Field Text="       $0.00" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="__________________________________________" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="Store:" />
+               <Field Text=" " />
+               <Field Text="0001" />
+               <Field Text="  " />
+               <Field Text="Register:" />
+               <Field Text=" " />
+               <Field Text="0100" />
+               <Field Text="     " />
+               <Field Text="Tran:" />
+               <Field Text=" " />
+               <Field Text="0009" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="Oper:" />
+               <Field Text=" " />
+               <Field Text="123" />
+               <Field Text="             " />
+               <Field Text="6/10/2019 3:37:15 PM" />
+            </ReceiptLine>
+            <LineFeed Lines="2" />
+            <ReceiptLine Alignment="Center">
+               <Field Text="Thank you for shopping Fujitsu" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Have a great day" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="" />
+            </ReceiptLine>
+            <BarCode Symbology="ITF" Height="1000" Width="7000" Alignment="Center" TextPosition="Below" Rotation="Normal" CheckDigit="12000" MapMode="METRIC" Data="000110000090001061019009" />
+            <LineFeed Lines="1" />
+            <LineFeed Lines="3" />
+            <Cut />
+         </Layout>
+         <Layout AlwaysPrint="True">
+            <ReceiptLine Alignment="Center">
+               <Field Text="Market Place" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Fujitsu America Inc" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Durham-MainSt-NC" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="100 Main Street" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="Durham" />
+               <Field Text=", " />
+               <Field Text="NC" />
+               <Field Text="  " />
+               <Field Text="27707" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center">
+               <Field Text="(" />
+               <Field Text="555" />
+               <Field Text=")" />
+               <Field Text=" " />
+               <Field Text="5550002" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="__________________________________________" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Center" ConditionalPrintType="1">
+               <Field Text="***** Duplicate *****">
+                  <PrintControl DoubleWide="1" DoubleHigh="1" />
+               </Field>
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine Alignment="Center">
+               <Field Text="* MERCHANT COPY *">
+                  <PrintControl Bold="1" />
+               </Field>
+            </ReceiptLine>
+			<ReceiptLine Alignment="Center">
+               <Field Text="* MERCHANT COPY *">
+                  <PrintControl Underline="1" />
+               </Field>
+            </ReceiptLine>
+			<ReceiptLine Alignment="Center">
+               <Field Text="* MERCHANT COPY *">
+                  <PrintControl ReverseVideo="1" />
+               </Field>
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine Alignment="Center">
+               <Field Text="CHARGE CARD" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <Paragraph>
+               <ReceiptLine>I hereby authorize this retailer to charge</ReceiptLine>
+               <ReceiptLine>the amount shown below to the card</ReceiptLine>
+               <ReceiptLine>specified below.  I agree to pay the below</ReceiptLine>
+               <ReceiptLine>credit card charges in accordance with the</ReceiptLine>
+               <ReceiptLine>Card Issuer Agreement.</ReceiptLine>
+            </Paragraph>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="VISA                        " />
+               <Field Text="    $46.04" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="Card number:" />
+               <Field Text="  " />
+               <Field Text="XXXXXXXXXXXXXXXXX" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="Authorization" />
+               <Field Text="  " />
+               <Field Text="abcdefg" />
+            </ReceiptLine>
+            <LineFeed Lines="4" />
+            <ReceiptLine Alignment="Left">
+               <Field Text="______________________________________" />
+            </ReceiptLine>
+            <ReceiptLine Alignment="Left">
+               <Field Text="Signature" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="__________________________________________" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <ReceiptLine>
+               <Field Text="Store:" />
+               <Field Text=" " />
+               <Field Text="0001" />
+               <Field Text="  " />
+               <Field Text="Register:" />
+               <Field Text=" " />
+               <Field Text="0100" />
+               <Field Text="     " />
+               <Field Text="Tran:" />
+               <Field Text=" " />
+               <Field Text="0009" />
+            </ReceiptLine>
+            <ReceiptLine>
+               <Field Text="Oper:" />
+               <Field Text=" " />
+               <Field Text="123" />
+               <Field Text="             " />
+               <Field Text="6/10/2019 3:37:15 PM" />
+            </ReceiptLine>
+            <LineFeed Lines="1" />
+            <BarCode Symbology="ITF" Height="1000" Width="7000" Alignment="Center" TextPosition="Below" Rotation="Normal" CheckDigit="12000" MapMode="METRIC" Data="000110000090001061019009" />
+            <LineFeed Lines="3" />
+            <Cut />
+         </Layout>
+      </ReceiptImage>
+      <PrinterDefaults Width="42" SidewaysMaxLines="17" SidewaysMaxChars="40" MapMode="METRIC" PrinterStation="RECEIPT" />
+   </FormattedData>
+   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha256" />
+         <Reference URI="">
+            <Transforms>
+               <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+            <DigestValue>5Jffaxe5thwVYK6BS0UYn+MwpNFJiyd0qnaAU8Fi+bc=</DigestValue>
+         </Reference>
+      </SignedInfo>
+      <SignatureValue>7BKYL8ojFx8dI0/D4ZIkquN7YAp81eguAMFn+JdX5TQ=</SignatureValue>
+      <KeyInfo>
+         <X509Data>
+            <X509IssuerSerial>
+               <X509IssuerName>CN=FujitsuRootDev</X509IssuerName>
+               <X509SerialNumber>447134189546339014426464418082348834</X509SerialNumber>
+            </X509IssuerSerial>
+            <X509Certificate>MIIDBDCCAfCgAwIBAgIPVh1q54JXoEkYdNYUfF8iMAkGBSsOAwIdBQAwGTEXMBUGA1UEAxMORnVqaXRzdVJvb3REZXYwHhcNMTIxMjAzMjIyMzQwWhcNMzkxMjMxMjM1OTU5WjAcMRowGAYDVQQDExFGdWppdHN1U2VydmljZURldjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKX4nk8SdGLnBp8YsHf5w0ljUnf5hjEGpqpfr97CpGoYp+qhFc5+kMAXQsXP4vCgWYrS2VmL4AOnczNRpN0/92F1hr2jp92809Oghr+GljZPN8QwC8A3pt6ppY2Qk36ts3edSOLJGK8XWPUkwU4EVWH18hhMFAe4aKog6zFHXgen4qEBgD7cRmNXrysAhOq5HEIRduCyxolwOhjpvYarM8Juaiy2FMgQdg3v+bmghIWbC9RMbQCBWK1LX2vo2XQ5Kr6NfhQynl8yNbeG8Zs7BIoWM4Z3511CRFz+A2Cn+OrYRiKUDYiSFmIq9xkZRckeEpjifuzAa4tgDDETHnEkcb0CAwEAAaNOMEwwSgYDVR0BBEMwQYAQuffjJPibf+0a70TI8z74BaEbMBkxFzAVBgNVBAMTDkZ1aml0c3VSb290RGV2ghCg5YVEveNnhUtROUXuj6K2MAkGBSsOAwIdBQADggEBAIcOqrLUL/EYnHCO7ke/LAZ9c1eVY4X7PGszHILKCgzNnROZfXvyPE6x23pbrHFUXx1RwZi78TdaSbKR/FDYqzdVv+Xe7s0nDoVWwG+AWaU3zU8+lGrWx3sAopvlIJ5yYo2TgiVYi0Pny0QBT/7sWmOQaiCwkPDgpzrwBWGZVU7hdZzYIMItxBpr42lqHvPWhcN812UfC5rYHw4eY3EiHVVLKdQWTSIwIoCPqZnV8vCl6cH5Jbkg9iD5/kFGXOnXudFAfQ6MnENxaiQi0WU4HTYGL6qcrZ6cMDHueq8+k6hodzXPxrV4GijCQ/8ui+8xB8KoWSuJC8QmIKxFVzZJhFk=</X509Certificate>
+         </X509Data>
+      </KeyInfo>
+   </Signature>
+</SignedFormattedData>

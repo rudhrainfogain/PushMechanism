@@ -1,0 +1,90 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Retail Peripheral Test UI</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="devices/styles.css">
+<script src="jquery-3.4.1.js"></script>
+<script src="devices/main.js"></script>
+</head>
+<body>
+	<div id="page-container">
+		<div class="main-logo-box logo-box">
+			<div class="main-logo">
+				<div class="logo logo-main layout horizontal center">
+					<div class="svg-sizing">
+						<svg focusable="false" role="img" viewBox="0 0 108 31">
+							<title id="fedexLogoTitle">FedEx Logo</title>
+							<g fill="none">
+								<path
+								d="M72.215 29.683H56.316V.983h15.9v6.4h-9.1v4.1h9.1v.017H80.8l4 4.4 3.9-4.4h8.2l-8 9 8.1 9.2h-8.6l-3.9-4.5-4 4.5h-8.3l.015-.017zm.001-.001L80.3 20.6l-8.084-9.082v6.065h-9.1v5.7h9.1v6.399zm28.151-3.424c0-2 1.6-3.4 3.4-3.4 1.8 0 3.4 1.4 3.4 3.4s-1.5 3.4-3.3 3.4c-1.9 0-3.5-1.4-3.5-3.4zm6.3 0c0-1.7-1.2-2.9-2.8-2.9-1.6 0-2.8 1.2-2.8 2.9s1.2 2.9 2.8 2.9c1.6 0 2.8-1.2 2.8-2.9zm-3.6.2v1.9h-.6v-4.2h1.5c.9 0 1.3.4 1.3 1.1 0 .5-.3.8-.7.9.4.1.5.4.6 1 .1.4.1 1 .3 1.2h-.8c-.2-.5-.1-1-.3-1.5-.1-.3-.3-.4-.7-.4h-.6zm.8-.6c.6 0 .8-.3.8-.6s-.2-.6-.8-.6h-.8v1.2h.8z"
+								fill="#FF6200" />
+								<path
+								d="M49.6.983h6.8v28.7h-6.7v-1.9h-.1c-1.2 1.8-3.2 2.9-5.4 2.9-5.1 0-8.8-4.1-9.4-8.9H21.5c0 2.1 1.8 3.9 3.8 3.9 1.7 0 2.4-.3 3.3-1.6h6.5c-1.7 4.2-4.9 6.5-9.8 6.5-5.8 0-10.4-4.2-10.4-10.2 0-1 .1-1.9.3-2.8H7.6v12.1H0V.983h16.9v6.4H7.6v4.1h8.5v3.8c1.7-3 5-4.9 9.1-4.9 5.1 0 8.6 2.7 9.9 7.1 1.2-4 4.5-7 8.9-7 2.2 0 4 .5 5.5 2.2h.1V.983zm-27.9 16.7h7.2c-.3-1.8-1.7-3-3.6-3-1.8 0-3.2 1.2-3.6 3zm23.8 7.6c2.7 0 3.9-2.2 3.9-4.7s-1.1-5-3.9-5c-2.7 0-4 2.4-4 5 0 2.4 1.5 4.7 4 4.7z"
+								fill="#FFFFFF" />
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="subscribe-container">
+			<h3>SUBSCRIBE TO PERIPHERAL SERVER</h3>
+
+			<label>PERIPHERAL SERVER IP:</label> <input type="text" name="ip"
+				id="ip" placeholder="Peripheral Server IP Address" /> <label
+				class="small-sizing">PORT NUMBER</label> <input type="text"
+				name="portNumber" id="portNumber" placeholder="Port Number" /> </br> </br> <select
+				id="drop-down">
+				<option value="PERIPHERALS_HEALTH">Peripheral's Health</option>
+				<option value="CONNECTED_PERIPHERALS">Connected Peripherals</option>
+			</select> </br>
+			<div class="buttons-div">
+				<button class="secondary" id="subscribe">Subscribe</button>
+				<button class="secondary" id="unSubscribe">UnSubscribe</button>
+			</div>
+		</div>
+		<div id="successMessageDiv">
+			<h1 id="successMessage"></h1></div>
+
+		<div id="peripheral-health-info"></div>
+
+<div id="peripheral-health-outer-div">
+<img src="images/RECEIPT_PRINTER.jpg">
+<img src="images/BARCODE_SCANNER.jpg">
+<img src="images/DYMO LabelWriter 450.jpg">
+<img src="images/DYMO LabelWriter 400.jpg">
+<img src="images/Zebra ZP 500 (ZPL).jpg">
+<img src="images/Zebra ZP 500 (ZPL NETWORK).jpg">
+</div>
+		<footer id="footer">
+			<div class="footer-base">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="footer-ba">
+								<div class="copyright">&#0169; FedEx 1995&ndash;2019</div>
+								<nav>
+									<ul class="legal-links">
+										<li><a
+											href="http://www.fedex.com/us/customersupport/email/index.html">Feedback</a>
+										</li>
+										<li><a href="http://www.fedex.com/us/sitemap.html">Site
+												Map</a></li>
+										<li><a
+											href="https://www.fedex.com/en-us/terms-of-use.html">Terms
+												of Use</a></li>
+										<li><a
+											href="https://www.fedex.com/en-us/trust-center.html">Security
+												&amp; Privacy</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

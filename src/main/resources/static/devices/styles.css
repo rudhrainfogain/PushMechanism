@@ -1,0 +1,342 @@
+#subscribe-container {
+	margin: 3rem;
+	width: 30%;
+	display: inline-block;
+}
+
+#connected-devices-info, #peripheral-health-info {
+	margin: 3rem;
+}
+
+#health-text-area {
+	width: 50%;
+	height: 40%;
+}
+
+#drop-down {
+	width: 50%;
+	height: 4rem;
+}
+
+#successMessage {
+	font-style: italic
+}
+
+label {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: #54646b;
+	display: block;
+	padding-bottom: .5rem;
+}
+
+input {
+	margin: 3px;
+	padding: 3px;
+	font-weight: 300;
+	margin: 0;
+	color: #2f4047;
+	height: 4rem;
+	padding: 1.5rem 0 1.5rem 1.5rem;
+	width: 90%;
+	min-width: 150px;
+	border: 1px solid #6f7f87;
+	background-color: #fff;
+	line-height: 0.7;
+	margin: 0;
+}
+
+input, label {
+	font-family: Roboto, sans-serif;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	font-size: 8px;
+	box-sizing: border-box;
+	line-height: 1.15;
+	height: 100vh;
+	min-height: 100vh;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-size: 2rem;
+	line-height: 3rem;
+	font-weight: 300;
+	color: #121e24;
+	position: relative;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.svg-sizing {
+	width: 17.5rem;
+	height: 5rem;
+	position: relative;
+}
+
+.logo-main svg {
+	margin: 0 auto;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.logo-main {
+	height: 100%;
+}
+
+.main-logo {
+	display: inline-block;
+}
+
+.main-logo-box {
+	background-color: #4d148c;
+}
+
+.logo-box {
+	height: 47px;
+	padding: 2rem;
+	box-sizing: initial;
+}
+
+footer, footer .content-column {
+	width: 100%;
+}
+
+article, aside, footer, header, nav, section {
+	display: block;
+}
+
+footer .footer-content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: #54646b;
+	background-color: #f7f9fa;
+	padding: 3rem 0 0 0;
+}
+
+footer .footer-base {
+	background-color: #4d148c;
+	color: #fff;
+	padding: 2rem 0;
+}
+
+.footer-ba {
+	margin-top: 2.1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.footer-ba nav>ul {
+	display: flex;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-ba nav li {
+	display: block;
+}
+
+.footer-ba nav li:first-of-type::before {
+	content: '';
+	padding: 0;
+}
+
+.footer-ba nav li::before {
+	content: '|';
+	padding: 0 0.75rem;
+}
+
+nav ul li {
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+	list-style-type: none;
+}
+
+.footer-ba nav a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+li a {
+	color: #0078b4;
+}
+
+.container {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+.col {
+	flex: 1 0;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+#page-container {
+	position: relative;
+	min-height: Calc(90vh);
+}
+
+.configure-wrapper {
+	margin: 0% 3% 0.5%;
+}
+
+.equal-sizing {
+	margin-top: 1em;
+}
+
+.large-sizing {
+	margin-top: 2em;
+}
+
+.small-sizing {
+	margin-top: 0.5em;
+}
+
+.vLarge-sizing {
+	margin-top: 4em;
+}
+
+button {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: inline-block;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	text-decoration: none;
+	background-color: #fff;
+	color: #ff6200;
+	padding: 1.75rem 3rem;
+	border-width: 2px;
+	line-height: 0.6;
+}
+
+button.primary {
+	background-color: #ff6200;
+	color: #fff;
+	border-color: #ff6200;
+	min-width: 130px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+button.secondary {
+	margin-top: 3rem;
+	background-color: #ff6200;
+	color: #fff;
+	border-color: #ff6200;
+	/* min-width: 240px; */
+	width: 200px;
+	display: inline-block;
+}
+
+#image-container {
+	margin-top: 5rem;
+}
+
+button:disabled {
+	background-color: #dad1d1;
+	color: white;
+	cursor: default;
+}
+
+@media ( min-width : 600px) {
+	.footer-ba {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+#peripheral-health-info {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#peripheral-health-outer-div img {
+	height: 1rem;
+	width: 1rem;
+	display: none;
+}
+
+#peripheral-health-outer-div {
+	margin-bottom: 200px;
+}
+
+#successMessageDiv {
+	margin-left: 20rem;
+	display: inline-block;
+	position: absolute;
+	top: 150px;
+}
+
+table {
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table td {
+	line-height: 200%;
+	font-weight: 450;
+}
+
+table td b {
+	font-weight: 1000;
+}
+
+table img {
+	vertical-align: middle;
+	height: 30rem;
+	width: 30rem;
+}
+
+table th {
+	background-color: #000;
+	color: white;
+}
+
+table td, table th {
+	padding: 10px;
+	border: 2px solid #000;
+	min-width: 35rem;
+}

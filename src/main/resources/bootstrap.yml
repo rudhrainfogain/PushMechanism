@@ -1,0 +1,36 @@
+logging:
+  level:
+    root: INFO
+    com:
+      fedex: DEBUG
+spring:
+  application:
+    name: rtl-peripherals
+  cloud:
+    services:
+      registrationMethod: route
+  open-in-view: false
+  jpa:
+    generate-ddl: false # Whether to initialize the schema on startup.
+    hibernate.ddl-auto: none # DDL mode. This is actually a shortcut for the "hibernate.hbm2ddl.auto" property. Defaults to "create-drop" when using an embedded database and no schema manager was detected. Otherwise, defaults to "none".
+  cloud:
+    refresh:
+      enabled: false # this configuration (cloud.refresh.enabled) can be removed after upgrading to Spring Boot 2.1.0 (and Spring Cloud Greenwich)
+security:
+  basic:
+
+    enabled: false
+
+
+# Discovery Server Access
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${vcap.services.service-registry.credentials.uri:http://127.0.0.1:8761}/eureka
+
+---
+
+spring:
+  profiles: mock
+  flyway:
+    enabled: false # Disable flyway for mock.
